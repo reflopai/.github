@@ -3,36 +3,46 @@
     <source media="(prefers-color-scheme: dark)" srcset="../assets/03_lockup_horizontal.png">
     <img src="../assets/03_lockup_horizontal_dark.png" width="500" alt="reFLOP AI logo">
   </picture>
-
+  
 #
-
+ 
   **Making remote GPU computing feel local.**
-
+ 
   Building a developer-first, fault-tolerant distributed GPU compute network.
-
+ 
   [Website](https://reflopai.com) · [Open-source runtime](https://github.com/reflopai/reflop) · [Contact](https://reflopai.com/contact)
 </div>
 
 ---
-
+ 
 ### Compute where you code.
+ 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="../assets/overview-dark.png">
+    <img src="../assets/overview-light.png" width="840" alt="Your Python runs locally and unchanged. Only tensor operations travel to a GPU provider, where they run as validated operations in a sandboxed worker. The reFLOP AI control plane (in development) handles discovery, scheduling, auth and metering.">
+  </picture>
+</p>
 
-reFLOP AI is building infrastructure that connects machine learning developers with remote GPU capacity—without requiring them to move their entire development environment to another machine.
-
-Our foundation is **[reFLOP](https://github.com/reflopai/reflop)**, an open-source runtime for executing supported PyTorch tensor operations on remote GPUs. Instead of giving users a remote shell or running arbitrary customer programs on the GPU provider's machine, reFLOP uses a constrained operator interface.
-
+Your code stays on your machine; only validated tensor operations reach the GPU. That's **[reFLOP](https://github.com/reflopai/reflop)**, our open-source runtime.
+ 
 ### What we're building
-
-| | |
-| --- | --- |
-| **Remote tensor execution** | Offload supported PyTorch computations to remote GPU workers while retaining a local Python development workflow. |
-| **Managed compute** *— in development* | Discover GPU capacity, schedule workloads, establish authenticated sessions, and handle metering and billing. |
-| **Workload recovery** *— research & development* | Reassign supported workloads after provider failures and recover from independently persisted checkpoints. |
-
+ 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="../assets/building-dark.png">
+    <img src="../assets/building-light.png" width="840" alt="Three stages. Remote tensor execution, available now: run PyTorch on a remote GPU from local Python. Managed compute, in development: capacity discovery, scheduling, authenticated sessions, metering and billing. Workload recovery, research and development: reassign workloads after provider failures and resume from independently persisted checkpoints.">
+  </picture>
+</p>
 The longer-term goal is a network where developers request compute, not machines—while providers contribute capacity without exposing general-purpose shell access to strangers.
-
+ 
 ### Built on open source
+ 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="../assets/open-core-dark.png">
+    <img src="../assets/open-core-light.png" width="840" alt="Two layers. The reFLOP AI managed platform (in development): orchestration, provider management, reliability services. It is built on the reFLOP open-source runtime (Apache-2.0, available): the reflop PyTorch client, the rootless reflopd daemon, an isolated worker, and a closed set of 582 operators.">
+  </picture>
+</p>
 
-**reFLOP** is available under the **Apache License 2.0**. The runtime and the planned managed platform are distinct: the open-source project handles the constrained execution path; reFLOP AI is building orchestration, provider management, and reliability services around it.
-
-Explore the code, follow development, or contribute through the [reFLOP repository](https://github.com/reflopai/reflop).
+Explore the code, follow development, or contribute through the **[reFLOP repository](https://github.com/reflopai/reflop)**.
