@@ -10,7 +10,7 @@
 
   Building a developer-first, fault-tolerant distributed GPU compute network.
 
-  [Website](https://reflopai.com) · [Open-source runtime](https://github.com/chaseungjoon/reflop) · [Contact](https://reflopai.com/contact)
+  [Website](https://reflopai.com) · [Open-source runtime](https://github.com/reflopai/reflop) · [Contact](https://reflopai.com/contact)
 </div>
 
 ---
@@ -19,7 +19,7 @@
 
 reFLOP AI is building infrastructure that connects machine learning developers with remote GPU capacity—without requiring them to move their entire development environment to another machine.
 
-Our foundation is **[reFLOP](https://github.com/chaseungjoon/reflop)**, an open-source runtime for executing supported PyTorch tensor operations on remote GPUs. Instead of giving users a remote shell or running arbitrary customer programs on the GPU provider's machine, reFLOP uses a constrained operator interface.
+Our foundation is **[reFLOP](https://github.com/reflopai/reflop)**, an open-source runtime for executing supported PyTorch tensor operations on remote GPUs. Instead of giving users a remote shell or running arbitrary customer programs on the GPU provider's machine, reFLOP uses a constrained operator interface.
 
 ### What we're building
 
@@ -35,6 +35,6 @@ The longer-term goal is a network where developers request compute, not machines
 
 **reFLOP** is available under the **Apache License 2.0**. The runtime and the planned managed platform are distinct: the open-source project handles the constrained execution path; reFLOP AI is building orchestration, provider management, and reliability services around it.
 
-Explore the code, follow development, or contribute through the [reFLOP repository](https://github.com/chaseungjoon/reflop).
+Explore the code, follow development, or contribute through the [reFLOP repository](https://github.com/reflopai/reflop).
 
 <sub>**Development status:** The open-source runtime exists today. The managed GPU network, usage-based billing, and automated checkpoint-based failover described above are planned capabilities, not currently offered as production services. The constrained execution model limits what customers can run on provider machines; it does not, by itself, guarantee confidentiality of customer tensor data from providers.</sub>
