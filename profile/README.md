@@ -4,8 +4,6 @@
     <img src="../assets/03_lockup_horizontal_dark.png" width="172" alt="reFLOP AI logo">
   </picture>
 
-  # reFLOP AI
-
   **Making remote GPU computing feel local.**
 
   Building a developer-first, fault-tolerant distributed GPU compute network.
