@@ -1,7 +1,7 @@
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="../assets/reflop-mark-light.png">
-    <img src="../assets/03_lockup_horizontal.png" width="172" alt="reFLOP AI logo">
+    <source media="(prefers-color-scheme: dark)" srcset="../assets/03_lockup_horizontal.png">
+    <img src="../assets/03_lockup_horizontal_dark.png" width="172" alt="reFLOP AI logo">
   </picture>
 
   # reFLOP AI
